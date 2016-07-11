@@ -59,6 +59,12 @@ for (band, album) in bestBandAlbums {
         }
 }
 
+//ALTERNATIVE: 
+//if let album = topAlbums[bandName] {
+//    print("\(bandName)'s top-selling album was \(album)")
+//}
+
+//NOTE: try to unwrap optional more than looping through dictionary 
 
 
 /*: question5
@@ -128,7 +134,7 @@ for (grade, avgScore) in avgExamResults {
     }
 }
 //REFACTOR: change this so that you account for occassions where there isn't an A. Possible idea: assign numerical values for each grade (F = 0, A = 4, B = 3, C = 2, D = 1) and then return which one has the highest number? Or add switch statement somehow. 
-//NOTE: solution provided a lot of insight into solving this issue!!! I was on the right track with putting in the variables above the for loop... so just need to continue with that train of that.  will not put solution here b/c I want to try to complete this question without looking at it 
+//NOTE: solution provided a lot of insight into solving this issue!!! I was on the right track with putting in the variables above the for loop... so just need to continue with that train of that.  will not put solution here b/c I want to try to complete this question without looking at it
 
 
 /*:
