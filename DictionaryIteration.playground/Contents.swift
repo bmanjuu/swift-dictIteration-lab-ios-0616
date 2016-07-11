@@ -17,7 +17,14 @@
  * The Beatles: _Sgt. Pepper's Lonely Hearts Club Band_
  */
 // write your code here
-
+var bestBandAlbums = [
+    
+    "Nirvana" : "Nevermind",
+    "Blondie" : "Parallel Lines",
+    "The Kinks" : "Low Budget",
+    "The Beatles" : "Sgt. Pepper's Lonely Hearts Club Band",
+    
+]
 
 
 
@@ -25,15 +32,18 @@
  ### 2. Oops, we forgot an album! Add the Pixie's _Doolittle_ to the dictionary you created in Question 1.
  */
 // write your code here
-
-
+bestBandAlbums["Pixie"] = "Doolittle"
+print(bestBandAlbums)
+//pixie was added!
 
 
 /*: question3
  ### 3. We don't care that much about The Kinks. Delete them from the dictionary you created in Question 1.
  */
 // write your code here
-
+bestBandAlbums["The Kinks"] = nil
+print(bestBandAlbums)
+//the kinks was deleted!
 
 
 
@@ -43,7 +53,11 @@
  */
 let bandName = "Nirvana"
 // write your code here
-
+for (band, album) in bestBandAlbums {
+    if band == bandName {
+        print("\(band)'s top-selling album was \(album)")
+        }
+}
 
 
 
@@ -51,14 +65,16 @@ let bandName = "Nirvana"
  ### 5. Iterate over the dictionary you created in Question 1 and print "<Band>'s top-selling album was <Album>" for each item in the dictionary.
  */
 // write your code here
-
+for (band, album) in bestBandAlbums {
+    print("\(band)'s top-selling album was \(album)")
+}
 
 
 
 /*: question6
  ### 6. What type of data structure is returned when you iterate over a dictionary?
  */
-
+//a tuple that contains two strings, one that refers to the band name and another which refers to the band's best-selling album
 
 
 
