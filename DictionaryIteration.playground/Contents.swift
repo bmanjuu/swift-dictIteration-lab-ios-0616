@@ -81,7 +81,7 @@ for (band, album) in bestBandAlbums {
 /*: question7
  ### 7. Imagine every student in every grade in a high school took an exam. Each student got a letter grade based on their test results (A, B, C, D, and F). The results were averaged together per grade. How could you represent this mapping of grades to exam average?
  */
-
+// I could represent the relationship between grades and letter grade averages by creating a dictionary that maps Int keys of grades to a String value of letter grade averages
 
 
 
@@ -94,7 +94,14 @@ for (band, album) in bestBandAlbums {
  * Grade 12: B
  */
 // write your code here
-
+let avgExamResults = [
+    
+    9 : "B",
+    10: "A",
+    11 : "C",
+    12 : "B",
+    
+]
 
 
 
@@ -102,7 +109,9 @@ for (band, album) in bestBandAlbums {
  ### 9. Print the message "Grade <Grade> got <Score>" for each grade in the dictionary you created in Question 8.
  */
 // write your code here
-
+for (grade, avgScore) in avgExamResults {
+    print("Grade \(grade) got \(avgScore)")
+}
 
 
 
@@ -110,8 +119,15 @@ for (band, album) in bestBandAlbums {
  ### 10. Find which grade got the highest score! Iterate through the dictionary to find the highest score, then print the message "Grade <Grade> got the highest score with <Score>!" to the console.
  */
 // write your code here
+//var highestScore : String = ""
+//var gradeWithHighestScore : Int = 0
 
-
+for (grade, avgScore) in avgExamResults {
+    if avgScore == "A" {
+        print("Grade \(grade) got the highest score with \(avgScore)!")
+    }
+}
+//REFACTOR: change this so that you account for occassions where there isn't an A. Possible idea: assign numerical values for each grade (F = 0, A = 4, B = 3, C = 2, D = 1) and then return which one has the highest number? Or add switch statement somehow. 
 
 
 /*:
